@@ -25,8 +25,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <p class="w3-text-grey">Web Portfolio</p>
   </div>
   <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
     <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-folder-open fa-fw w3-margin-right"></i>PROJECTS</a>  
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
     <a href="#coursework" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>COURSEWORK</a>  
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
@@ -50,20 +50,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Filter:</span> 
-      <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
-    </div>
-    </div>
-  </header>
   
   <!-- First Photo Grid-->
   <header id = "projects">
@@ -102,6 +88,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             <p>UC Irvine Solar car to compete in the American Solar Challenge.</p>
           </div>
         </div>
+        <div class="w3-third w3-container">
+          <!-- <img src="/w3images/p3.jpg" alt="Projector Buddy" style="width:100%" class="w3-hover-opacity"> -->
+          <div class="w3-container w3-white">
+            <p><b>Projector Buddy</b></p>
+            <p>Proof-of-concept project for a device that can externally attach to projectors and save power using various sensors, internet of things, and machine learning.</p>
+          </div>
+        </div>
         <div class="w3-third w3-container w3-margin-bottom">
           <img src="Photos/MotorDriver.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
@@ -109,14 +102,41 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             <p>UC Riverside Electric Vehicle to compete in the Shell Eco Marathon competition for most efficient vehicle.</p>
           </div>
         </div>
-        <div class="w3-third w3-container">
-          <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Lorem Ipsum</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          </div>
-        </div>
+        
+        
       </div>
+    </div>
+  </header>
+
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <h2><b>Experience</b></h2>
+        <h4><b>California Plug Load Research Center</b></h4>
+        <h6><b>Undergraduate Research Assistant</b></h6>
+        <p>As an undergraduate research assistant in the CalPlug lab, I am working with a team of engineers to build solutions that can externally attach to, retrofit, and extend upon existing consumer electronics to perform energy saving actions while minimizing human intervention. Firmware and hardware we use include the ESP32, MQTT IoT protocol, various sensors using I2C communication protocol, FreeRTOS, and Eclipse. 
+        </p>
+
+        <h4><b>UC Irvine Micromouse</b></h4>
+        <h6><b>Robotics Coordinator</b></h6>
+        <!-- <img src="Photos/MicromouseGroupPhoto.jpg" alt="Me" style="width:40%"> -->
+        <p>Following my admission to UC Irvine, I founded UC Irvine's first micromouse division. I wanted to share the experience I gained from micromouse and create a community of aspiring engineers with common interest. I instruct other students in hardware using micro-controllers, various sensors, motors, encoders, and electrical circuit concepts. Software concepts include Proportional Integral Derivative (PID) Control, Pulse Width Modulation (PWM), and path-finding algorithms. My goal as the robotics coordinator is to have multiple teams representing UC Irvine at collegiate robotics competitions succeed. 
+        </p>
+
+        <h4><b>Vista IT Consulting and Training</b></h4>
+        <h6><b>IT Consultant Intern</b></h6>
+        <p>For the duration of a summer, I interned as an IT Consultant, providing end user support for over 30 companies at a Microsoft partnered Information Technology firm with a team of 5 IT Specialist. I also assembled, diagnosed, and repaired electronic hardware to improve efficiency and optimize performance in the hardware’s respective tasks. From time to time, I was required to facilitate configuration and implementation of servers and networks.
+        </p>
+
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
     </div>
   </header>
 
@@ -144,7 +164,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
     <h4><b>About Me</b></h4>
-    <p>What the fuck did you just fucking say about me, you little bitch? I’ll have you know I graduated top of my class in the UC Irvine EECS department, and I’ve been involved in numerous secret projects with NASA, SPACEX, JPL, Microsoft, Intel, Google, Amazon, and I have over 300 confirmed successful startups. I am trained in gorilla cyber-warfare and I’m the top hacker in the entire fucking nation. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You’re fucking dead, kiddo.</p>
+    <p>I am currently a Junior Computer Engineering major at the University of California, Irvine. I am an undergraduate research assistant in the California Plug Load Research Center, the robotics coordinator for the micromouse division at UC Irvine, and the Telemetry lead for the UC Irvine Solar Car team. 
+    </p>
+    <p>
+    Outside of school, I spend most of my time training as I am part of the UC Irvine Dragon Boat team. As a student athlete, I am required to train for strength and endurance multiple times during the week and train on water with the team on weekends.
+    </p>
     <hr>
     
     <h4>Technical Skills</h4>
@@ -168,8 +192,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </p>
     <hr>
     
+    
     <h4>How much I charge</h4>
     <!-- Pricing Tables -->
+    <!--
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
@@ -223,7 +249,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
   </div>
-  
+  -->
+
   <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-grey">
     <h4 id="contact"><b>Contact Me</b></h4>
