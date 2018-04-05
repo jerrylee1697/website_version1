@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Jerry Lee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="Photos/ProfilePicture.jpg" style="width:75%;" class="w3-round"><br><br>
+    <h2><b>Jerry Lee</b></h2>
+    <h4><b>University of California, Irvine</b></h4>
+    <h4><b>Computer Engineer</b></h4>
+    <h4><b>Class of 2019</b></h4>
+    <p class="w3-text-grey">Web Portfolio</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-folder-open fa-fw w3-margin-right"></i>PROJECTS</a>  
+    <a href="index.html#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="index.html#coursework" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>COURSEWORK</a>  
+    <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    <a href="Resume.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-send fa-fw w3-margin-right"></i>RESUME</a>
+    <a href="https://www.linkedin.com/in/jerry-lee/" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-linkedin w3-hover-opacity fa-fw w3-margin-right"></i>LINKEDIN</a>
+    <a href="https://github.com/jerrylee1697" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-github w3-hover-opacity fa-fw w3-margin-right"></i>GITHUB</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <!-- <a href="https://www.linkedin.com/in/jerry-lee/"><i class="fa fa-linkedin w3-hover-opacity"></i>LINKEDIN</a> -->
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  
+  <!-- First Photo Grid-->
+
+  <header>
+    <div class="w3-row-padding">
+      <div class="w3-container">
+      	<a href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+      		<h3><b>Back to My Projects</b></h3></a>
+        <h1><b>Mango Mouse V2.0</b></h1>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="MangoMouseV2/MangoMouseV2_Mounts.jpg" alt="Micromouse1" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p ><b>Mango Mouse V2.0 - Micromouse 2018</b></p>
+            <p>Micromouse for the 2018 Micromouse Season. Utilizes PCB Design with more complex components, software, advanced robotics techniques.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="MangoMouseV2/Top.png" alt="Micromouse2" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Mango Mouse V1.0 - Micromouse 2018</b></p>
+            <p>Micromouse for the 2018 Micromouse Season. Utilizes simple and more affordable components with advanced software and robotics techniques.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="MangoMouseV2/Bottom.png" alt="JuJu Micromouse" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Two Layer - Micromouse 2018</b></p>
+            <p>Micromouse that utilizes a two layer build design.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Second Photo Grid-->
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="MangoMouseV2/Schematic.JPG" alt="SolarCar" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>UC Irvine Solar Car</b></p>
+            <p>UC Irvine Solar car to compete in the American Solar Challenge.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="MangoMouseV2/PCB.JPG" alt="Projector Buddy" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Projector Buddy</b></p>
+            <p>Proof-of-concept project for a device that can externally attach to projectors and save power using various sensors, internet of things, and machine learning.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="Photos/Micromouse1.jpg" alt="MotorDriver" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Shell Eco Marathon Electric Car </b></p>
+            <p>UC Riverside Electric Vehicle to compete in the Shell Eco Marathon competition for most efficient vehicle.</p>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </header>
+
+<!-- End page content -->
+</div>
+
+
+
+</body>
+</html>
